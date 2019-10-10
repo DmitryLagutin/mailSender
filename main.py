@@ -9,20 +9,20 @@ sender_email = "aaa@lagunasun.ru"
 receiver_email = 'dimalaga@mail.ru'
 password = 'go4no4123'
 
-message = ' 9834'
+message = ''
 
 # Create a secure SSL context
 context = ssl.create_default_context()
 
 messagePlain = 'Visit nitratine.net for some great tutorials and projects!'
-HTML = open('index.html')
+HTML = open('index.html', encoding="utf-8")
 messageHTML = HTML.read()
 HTML.close()
 
 msg = MIMEMultipart('alternative')
 msg['From'] = sender_email
 msg['To'] = receiver_email
-msg['Subject'] = 'Пример'
+msg['Subject'] = 'Супер предложние'
 
 msg.attach(MIMEText(messagePlain, 'plain'))
 #with open('preview.jpg', 'rb') as fp:

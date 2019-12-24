@@ -1,0 +1,6 @@
+{
+  "smtp_server": "mail.xyz7.info",
+  "port": 25,
+  "sender_email": "online.support@xyz7.info",
+  "password": "qwer1234"
+}
